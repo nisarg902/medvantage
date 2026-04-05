@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedVantage | Pharmacy Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="card shadow-lg p-4 text-center" style="max-width: 400px; width: 100%;">
+            <h2 class="mb-4 text-primary">MedVantage</h2>
+            <p class="text-muted mb-4">Welcome to your professional pharmacy management portal.</p>
+            
+            <button id="loginBtn" class="btn btn-primary w-100 py-2 shadow-sm">
+                Login with Google
+            </button>
+
+            <div id="dashboard" class="mt-4 d-none">
+                <div class="alert alert-success">Access Granted!</div>
+                <p>Welcome, <span id="userName" class="fw-bold"></span></p>
+                <button id="logoutBtn" class="btn btn-outline-danger btn-sm">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
